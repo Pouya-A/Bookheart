@@ -1,0 +1,73 @@
+@use '../custom'as *;
+
+.menu-title{
+        visibility: hidden;
+        padding: 2rem !important;
+        position: fixed;
+        z-index: 100000;
+        top: 0;
+        right:0;
+        transform: translateX(100%);
+        background-color: $white;
+        height: 100%;
+        width: 350px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+       transition: all 0.5s ease;
+       
+            .close-btn{
+                cursor: pointer;
+                transition: .4s ease;
+                &:hover{
+                    color: $third-color;
+                }
+            }
+           &-items{
+                width: 100%;
+                
+               .menu-item{
+                    transition: .4s ease all;
+                    letter-spacing: 0 !important;
+                    cursor: pointer;
+                    font-weight: 700;
+                    margin-bottom: 0.5rem !important;
+                    &:hover{
+                        @include fontTransition;
+
+                    }
+                }
+
+                 .active {
+                    @include fontTransition;
+                    
+                }
+            }
+
+
+
+
+              @include media-breakpoint-down(xl) {
+                max-height: 400px;
+                width: 100%;
+                transform: translateY(100%);
+                 top:initial ;
+                bottom: 0 !important;
+                left: 0;
+                border-top-left-radius: 30px;
+                border-top-right-radius: 30px;
+
+
+
+
+                }
+
+          
+
+}
+
+
+
+    .active{
+                visibility: visible;
+                transform: translateX(0) !important;
+            }

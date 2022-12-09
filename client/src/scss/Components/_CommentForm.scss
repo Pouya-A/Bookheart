@@ -1,0 +1,64 @@
+@use '../custom'as *;
+form {
+    // @include glasslayer2;
+     background-color: $white;
+    border-radius: 30px;
+    padding: 3rem 5rem 5rem 5rem !important;
+
+    
+    h3 {
+        color: $title-menu-color;
+    }
+
+    .comments {
+        input {
+            height: 40px;
+            @include inputStyle;
+       
+        }
+
+        .text-area {
+            margin-top: 2rem !important;
+
+            textarea {
+                padding: 1rem 2rem !important;
+                resize: none;
+                @include inputStyle;
+                width: 100%;
+
+                &:focus {
+                    transition: 0.4s ease;
+                    width: 100%;
+                }
+            }
+
+        }
+        
+
+    }
+
+    button {
+        @include custombutton;
+    }
+
+        @include media-breakpoint-down(md) {
+            padding: 2rem !important;
+
+            h3 {
+                text-align: center;
+            }
+            .comments{
+                input{
+                     width: 100%;
+
+                     &:focus {
+                         transition: 0.4s ease;
+                         width: 100%;
+                     }
+
+                     margin-bottom: 2rem !important;
+                }
+
+            }
+        }
+}

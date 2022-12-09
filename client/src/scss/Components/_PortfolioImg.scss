@@ -1,0 +1,103 @@
+@use '../custom'as *;
+.GAP{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+   
+  margin-top: 7rem !important;
+    row-gap: 2.2em;
+    
+
+.portfolio-img-content {
+    position: relative;
+    min-height: 500px;
+    min-width: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+
+        .img-content{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        img {
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: .5s ease;
+        }
+
+  
+
+            }   
+
+
+.img-content-info{
+    padding: 1rem !important;
+   @include glasslayer2;
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+    position: absolute;
+    z-index: 1 ;
+    bottom: -50%;
+    left: 0;
+    
+    transition: .5s ease;
+      
+
+    &-book-title{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+         p{
+          
+        
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: $title-menu-color !important;
+            }
+
+
+    }
+    &-book-name{
+        width: 100%;
+        display: flex;
+      
+        justify-content: flex-start;
+        color: $white;
+
+        h6{
+            font-weight: 500;
+            
+    
+            
+        }
+    }
+   
+
+  
+    
+}
+
+&:hover {
+
+    img {
+        transform: scale(1.1);
+    }
+    .img-content-info{
+        bottom: 0;
+        
+    }
+
+
+
+}
+    
+}
+
+
+
+}

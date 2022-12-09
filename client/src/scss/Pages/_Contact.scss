@@ -1,0 +1,59 @@
+@use '../custom'as *;
+
+.contact{
+     padding: 8em 3em !important;
+     width: 100%;
+
+
+     .about-info {
+          display: flex;
+          justify-content: space-between;
+          font-size: .9rem;
+          min-width: 100%;
+
+          &-title {
+
+               @include media-breakpoint-down(xl) {
+                    padding-left: 0 !important;
+               }
+
+               p {
+                    margin-bottom: 1em !important;
+                    color: $black;
+               }
+          }
+
+          &-value {
+               display: flex;
+               flex-direction: column;
+               align-items: flex-end;
+               color: $black;
+
+               p {
+                    margin-bottom: 1em !important;
+
+                    &:nth-child(4) {
+                         cursor: pointer;
+                         transition: .4s ease;
+
+                         &:hover {
+                              @include fontTransition;
+                         }
+                    }
+
+                    &:nth-child(5) {
+                         cursor: pointer;
+                         transition: .4s ease;
+
+                         &:hover {
+                              @include fontTransition;
+                         }
+
+                    }
+               }
+
+
+
+          }
+     }
+}

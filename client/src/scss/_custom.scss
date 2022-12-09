@@ -1,0 +1,84 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+$white:rgba(255, 251, 242, 0.945) !default;
+$black: rgb(33, 29, 33) !default;
+$text-color:rgb(1, 10, 16);
+$black-modal:    rgba(0, 0, 0, 0.527) !default;
+$light-gray:#BBBBBB;
+$primary-color:#1f2029;
+$background-color:#353741;
+// $background-color:#353741;
+$secondary-color:rgba(121, 121, 121, 0.507);
+$third-color:rgba(255, 0, 0, 0.7);
+
+
+$title-menu-color:rgba(255, 0, 0, 1);
+
+@mixin fontTransition {
+    letter-spacing: 3px !important;
+    color: $third-color !important;
+}
+
+@mixin generalBorder {
+     border: 4px solid $black;
+}
+@mixin glasslayer {
+     background: white;
+     background: linear-gradient(to right bottom, rgba(112, 112, 112, 0.6), rgba(0, 0, 0, 0.4));
+     backdrop-filter: blur(0.8rem);
+     -webkit-backdrop-filter: blur(0.8rem);
+}
+@mixin glasslayer2 {
+    background: white;
+    background: linear-gradient(to left top, #35374165, rgba(105, 102, 102, 0.35));
+    backdrop-filter: blur(0.3rem) !important;
+    -webkit-backdrop-filter: blur(0.3rem) !important;
+}
+@mixin glasslayer3 {
+    background: white;
+    background: linear-gradient(to left top, #c0c0c065, rgba(83, 83, 83, 0.35));
+    backdrop-filter: blur(0.5rem);
+    -webkit-backdrop-filter: blur(0.5rem);
+}
+@mixin inputStyle{
+    outline: none;
+    border: none;
+    padding-left: 1rem !important;
+    background-color:$secondary-color;
+    transition: 0.2s ease;
+    color: $black;
+    width: 35%;
+    border-bottom: 3px solid $black;
+    caret-color: $white;
+
+    &:focus {
+        transition: 0.4s ease;
+        width: 60%;
+    }
+
+    &::placeholder {
+        color: $black;
+    }
+}
+
+@mixin custombutton {
+    outline: none !important;
+    border: none !important;
+     color: $black !important;
+     position: relative;
+     background: linear-gradient(to left, $white 50%, $black 50%) right;
+     background-size: 500%;
+     transition: 0.6s ease-out !important;
+     align-self: flex-start;
+     border: 3px solid $black !important;
+
+     &:hover {
+         color: $white !important;
+         background-position: left !important;
+       
+     }
+}
+
+
+
+

@@ -1,0 +1,29 @@
+
+@use '../custom'as*;
+
+.comment {
+    padding: 1.5rem 3rem !important;
+    background-color: white;
+    border-radius: 30px;
+
+    &-user {
+        h5 {
+            color: $title-menu-color !important;
+        }
+
+        label {
+            color: $title-menu-color !important;
+            font-size: .9rem !important;
+        }
+    }
+
+    &-det {
+        color: $black;
+
+        p {
+            font-weight: 400;
+            font-size: .9rem;
+            text-align: justify !important;
+        }
+    }
+}
