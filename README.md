@@ -27,6 +27,7 @@ This fancy website includes ReactJs as the staple framework for building client-
 #ABOUT PAGE
 ![Screenshot (815)](https://user-images.githubusercontent.com/58390637/211154552-9754d561-9741-422a-95e3-7bee3cd454a8.png)
 ![Screenshot (816)](https://user-images.githubusercontent.com/58390637/211154596-fc31745f-65cc-4b44-ae51-e5a5c67e0642.png)
+![Screenshot (826)](https://user-images.githubusercontent.com/58390637/211855476-904557b1-f423-43f3-94ab-95a48d20cf11.png)
 
 #CONTACT US
 ![Screenshot (768)](https://user-images.githubusercontent.com/58390637/211153214-7f39ed37-33e8-4cc4-a27a-f911184c1cad.png)
