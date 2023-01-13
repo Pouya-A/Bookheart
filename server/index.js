@@ -43,7 +43,10 @@ app.get("/bookapi/getsinglebook/:id", async (req, res) => {
       res.status(404).json({ msg: `No Such a data with id of ${id}` });
     }
     res.status(200).json({ getSingleBook });
-  } catch (error) {}
+  } catch (error) {
+    res.status(500);
+    res.json("Something Went Wrong", error);
+  }
 });
 
 ///////////////////Get title book name
@@ -81,7 +84,10 @@ app.get("/bookapi/getcomments/:id", async (req, res) => {
     );
 
     res.status(200).json({ getBookComment });
-  } catch (error) {}
+  } catch (error) {
+    res.status(500);
+    res.json("Something Went Wrong", error);
+  }
 });
 
 app.post("/bookapi/setcomment", (req, res) => {
@@ -138,7 +144,10 @@ app.get("/bookapi/getcommentsforshop/", async (req, res) => {
     );
 
     res.status(200).json({ getBookComment });
-  } catch (error) {}
+  } catch (error) {
+    res.status(500);
+    res.json("Something Went Wrong", error);
+  }
 });
 
 app.listen(3001, () => {

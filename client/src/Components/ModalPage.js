@@ -4,7 +4,7 @@ import { ContextPort } from "../context/context";
 import ModalProject from "./subComponent/ModalProject";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
-import gsap, { Power4, Circ } from "gsap";
+import gsap, {  Circ } from "gsap";
 
 const ModalPage = () => {
   const { modalOpen, skillsData, isModal } = useContext(ContextPort);

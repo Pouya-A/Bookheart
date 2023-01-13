@@ -9,7 +9,6 @@ const TitleMenu = () => {
     isMenuModal,
     restBookTitle,
     target,
-
     onClickActiveClass,
   } = useContext(ContextPort);
   return (
